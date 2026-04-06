@@ -20,6 +20,15 @@ export const skills = [
 
 export const projects = [
   {
+    title: "SkillSwap — Skill Exchange Platform",
+    description:
+      "Built a full-stack skill-swap marketplace where users trade skills instead of money. Features JWT authentication, skill browsing with filters, swap request management (send/accept/reject), and a star review system post-swap. Built with React + Vite, Node.js, Express, PostgreSQL via Prisma ORM, and deployed on Vercel + Render with Supabase.",
+    tech: ["React", "Node.js", "Express", "PostgreSQL", "Prisma", "JWT", "Tailwind CSS"],
+    github: "https://github.com/Rakeshsinha1105/skillswap",
+    live: "https://skillswap-rks.vercel.app",
+    featured: true,
+  },
+  {
     title: "Hostel Management System",
     description:
       "Built a centralized RDBMS to streamline hostel administration at NIT Warangal, managing 500+ student records, room allocations, and maintenance requests. Designed normalized ER schemas, implemented complex SQL queries with indexing strategies reducing retrieval time by 25–35%, and automated key workflows like room allocation and maintenance tracking.",
