@@ -3,8 +3,8 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Mail } from "lucide-react";
-import { GithubIcon, LinkedinIcon, TwitterIcon } from "./Icons";
+import { Mail, Phone } from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "./Icons";
 import { personal } from "../data";
 
 export default function Contact() {
@@ -32,19 +32,27 @@ export default function Contact() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="space-y-4"
         >
-          <a
-            href={`mailto:${personal.email}`}
-            className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-violet-600 hover:bg-violet-500 text-white font-medium transition-all duration-200 hover:shadow-xl hover:shadow-violet-500/20"
-          >
-            <Mail size={18} />
-            Send me an email
-          </a>
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <a
+              href={`mailto:${personal.email}`}
+              className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-violet-600 hover:bg-violet-500 text-white font-medium transition-all duration-200 hover:shadow-xl hover:shadow-violet-500/20"
+            >
+              <Mail size={18} />
+              Send me an email
+            </a>
+            <a
+              href={`tel:${personal.phone}`}
+              className="inline-flex items-center gap-3 px-8 py-4 rounded-full border border-white/10 text-gray-300 hover:border-white/30 hover:text-white transition-all duration-200"
+            >
+              <Phone size={18} />
+              {personal.phone}
+            </a>
+          </div>
 
           <div className="flex items-center justify-center gap-6 pt-6">
             {[
               { icon: GithubIcon, href: personal.github, label: "GitHub" },
               { icon: LinkedinIcon, href: personal.linkedin, label: "LinkedIn" },
-              { icon: TwitterIcon, href: personal.twitter, label: "Twitter" },
             ].map(({ icon: Icon, href, label }) => (
               <a
                 key={label}

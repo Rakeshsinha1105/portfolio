@@ -55,12 +55,30 @@ export default function Experience() {
                     ))}
                   </ul>
 
-                  <div className="flex flex-wrap gap-2">
-                    {job.skills.map((s) => (
-                      <span key={s} className="text-xs px-2.5 py-1 rounded-full bg-violet-500/10 text-violet-400 border border-violet-500/20">
-                        {s}
-                      </span>
-                    ))}
+                  <div className="flex flex-wrap items-center justify-between gap-3">
+                    <div className="flex flex-wrap gap-2">
+                      {job.skills.map((s) => (
+                        <span key={s} className="text-xs px-2.5 py-1 rounded-full bg-violet-500/10 text-violet-400 border border-violet-500/20">
+                          {s}
+                        </span>
+                      ))}
+                    </div>
+                    {job.certificate && (
+                      <a
+                        href={job.certificate}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full border border-emerald-500/30 text-emerald-400 bg-emerald-500/10 hover:bg-emerald-500/20 transition-all duration-200 shrink-0"
+                      >
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                          <polyline points="14 2 14 8 20 8"/>
+                          <line x1="9" y1="12" x2="15" y2="12"/>
+                          <line x1="9" y1="16" x2="12" y2="16"/>
+                        </svg>
+                        View Certificate
+                      </a>
+                    )}
                   </div>
                 </div>
               </motion.div>

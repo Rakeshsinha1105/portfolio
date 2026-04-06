@@ -2,11 +2,11 @@ export const personal = {
   name: "Rakesh Sinha Jangam",
   title: "Software Engineer",
   bio: "Software Engineer at Dheyo AI building full-stack features for AI-powered platforms. B.Tech in EEE from NIT Warangal. Passionate about systems programming, backend performance, and clean scalable code.",
+  phone: "+91 9347481626",
   email: "rakeshsinhajangam@gmail.com",
   github: "https://github.com/Rakeshsinha1105",
   linkedin: "https://www.linkedin.com/in/rakeshsj/",
-  twitter: "https://twitter.com/yourusername",
-  resume: "/resume.pdf",
+  resume: "https://drive.google.com/file/d/1f8Jj2lHQJlIZXZ78Mr-sAHNrGBqDBYm8/view?usp=sharing",
 };
 
 export const skills = [
@@ -15,7 +15,7 @@ export const skills = [
   { category: "Backend", items: ["Node.js", "Express.js", "REST APIs", "MQTT"] },
   { category: "Databases", items: ["PostgreSQL", "SQL", "Excel"] },
   { category: "Visualization", items: ["Power BI", "Tableau"] },
-  { category: "Tools & DevOps", items: ["Git", "GitHub", "Linux", "VS Code", "Docker"] },
+  { category: "Tools & DevOps", items: ["Git", "GitHub", "Linux", "VS Code", "Docker", "Jenkins", "GCP"] },
 ];
 
 export const projects = [
@@ -24,7 +24,7 @@ export const projects = [
     description:
       "Built a centralized RDBMS to streamline hostel administration at NIT Warangal, managing 500+ student records, room allocations, and maintenance requests. Designed normalized ER schemas, implemented complex SQL queries with indexing strategies reducing retrieval time by 25–35%, and automated key workflows like room allocation and maintenance tracking.",
     tech: ["PostgreSQL", "SQL", "DBMS"],
-    github: "",
+    github: "https://github.com/Rakeshsinha1105/Hostel-Management-system",
     live: "",
     featured: false,
   },
@@ -34,7 +34,7 @@ export const projects = [
       "Designed and developed the official Electrical Engineering Society website serving 1000+ students. Built dynamic pages centralizing event updates, announcements, and academic resources. Developed dedicated modules for internship and placement resources. Focused on responsive design, cross-browser compatibility, and optimized DOM manipulation for smooth UX across all devices.",
     tech: ["HTML", "CSS", "JavaScript", "GitHub", "Linux"],
     github: "",
-    live: "",
+    live: "https://eesnitwarangal.github.io",
     featured: false,
   },
   {
@@ -43,7 +43,7 @@ export const projects = [
       "Designed and shipped motion feature integration across a 7-stage auto-generation pipeline with real-time synchronization at Dheyo AI. Implemented motion_id propagation through React Redux → REST API → PostgreSQL → concurrent shot generation, handling 1000+ concurrent shots without degradation. Built checkpoint-based recovery with optimistic locking, shot enrichment middleware with zero breaking changes, and reduced metadata lookups by 35% via intelligent caching.",
     tech: ["React.js", "Redux", "TypeScript", "PostgreSQL", "REST APIs", "CRDT"],
     github: "",
-    live: "",
+    live: "https://eyoh.ai/",
     featured: true,
   },
   {
@@ -51,17 +51,55 @@ export const projects = [
     description:
       "Built a production-grade HTTP/1.1 server from scratch handling 25,000+ requests/sec with 10,000+ concurrent connections. Implemented non-blocking I/O multiplexing via epoll, thread pool with producer-consumer pattern, and full HTTP/1.1 parsing with pattern-based routing (exact, params, wildcards). Features graceful shutdown, structured logging, and config management. Zero compilation warnings.",
     tech: ["C++17", "epoll", "TCP/IP", "pthreads", "Linux"],
-    github: "",
+    github: "https://github.com/Rakeshsinha1105/cpp-http-server",
     live: "",
     featured: true,
   },
 ];
 
+export const certifications = [
+  {
+    title: "C++ and DSA",
+    issuer: "NIT Warangal",
+    link: "https://drive.google.com/file/d/1JtmdfylavrOOq-pAIJea49YJmjmaj-In/view?usp=sharing",
+  },
+  {
+    title: "Redux JS",
+    issuer: "Udemy",
+    link: "https://drive.google.com/file/d/1REE6tcYeA0ClyI5CBRQ-RgAy9sX901Li/view?usp=sharing",
+  },
+  {
+    title: "System Design",
+    issuer: "Udemy",
+    link: "https://drive.google.com/file/d/1s7Nedq6CFpIywjc-Io0cdVgt-2NgWwtz/view?usp=sharing",
+  },
+  {
+    title: "PostgreSQL",
+    issuer: "Udemy",
+    link: "https://drive.google.com/file/d/1xCRxN4sqA01sdGb05OzkSKv4TP5hCpXa/view?usp=sharing",
+  },
+  {
+    title: "Full Stack JavaScript",
+    issuer: "Udemy",
+    link: "",
+  },
+  {
+    title: "C++ DSA + LeetCode",
+    issuer: "Udemy",
+    link: "https://drive.google.com/file/d/1mL6fcMfZQuW0gIyySxzpKe1lByP_X7LJ/view?usp=sharing",
+  },
+];
+
 export const achievements = [
   {
-    title: "500+ DSA Problems Solved",
-    description: "Solved 500+ problems across LeetCode, GeeksForGeeks, Codeforces, and other competitive programming platforms.",
+    title: "600+ DSA Problems Solved",
+    description: "Solved 600+ problems across LeetCode, Codeforces, GeeksForGeeks, and other competitive programming platforms.",
     icon: "💻",
+  },
+  {
+    title: "Winner — Tri-NIT Hackathon",
+    description: "Won the Tri-NIT Hackathon conducted jointly by NIT Warangal, NIT Trichy, and NITK.",
+    icon: "🏅",
   },
   {
     title: "GATE 2025 — AIR 2300",
@@ -148,6 +186,7 @@ export const experience = [
       "Shipped 12+ features on tight sprints collaborating with product and engineering teams.",
     ],
     skills: ["React.js", "Redux", "Node.js", "PostgreSQL", "C++", "WASM", "REST APIs"],
+    certificate: "",
   },
   {
     role: "SDE Intern",
@@ -161,6 +200,7 @@ export const experience = [
       "Identified and resolved performance bottlenecks across the application stack, contributing to an overall ~30% improvement in data processing efficiency.",
     ],
     skills: ["Express.js", "PostgreSQL", "C++", "SQL", "REST APIs"],
+    certificate: "https://drive.google.com/file/d/1K3fDO9gYCZpC-_1KTiBACvVQEmAyDp4P/view?usp=sharing",
   },
   {
     role: "SDE Intern",
@@ -173,5 +213,6 @@ export const experience = [
       "Implemented responsive front-end interfaces with React.js, Bootstrap, HTML, CSS, and JavaScript for real-time data visualization.",
     ],
     skills: ["Node.js", "React.js", "Express.js", "PostgreSQL", "MQTT", "Bootstrap"],
+    certificate: "https://drive.google.com/file/d/1YVXkRTCKfjcBJMMqoWzD-cxEJGvHZy6u/view?usp=sharing",
   },
 ];

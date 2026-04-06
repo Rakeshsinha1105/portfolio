@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Mail, ArrowDown } from "lucide-react";
-import { GithubIcon, LinkedinIcon, TwitterIcon } from "./Icons";
+import { GithubIcon, LinkedinIcon } from "./Icons";
 import { personal } from "../data";
 
 const fadeUp = (delay = 0) => ({
@@ -63,7 +63,6 @@ export default function Hero() {
           {[
             { icon: GithubIcon, href: personal.github, label: "GitHub" },
             { icon: LinkedinIcon, href: personal.linkedin, label: "LinkedIn" },
-            { icon: TwitterIcon, href: personal.twitter, label: "Twitter" },
             { icon: Mail, href: `mailto:${personal.email}`, label: "Email" },
           ].map(({ icon: Icon, href, label }) => (
             <a
