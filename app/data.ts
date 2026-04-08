@@ -181,7 +181,7 @@ export const education = [
 
 export const experience = [
   {
-    role: "Software Engineer",
+    role: "Software Developer",
     company: "Dheyo AI",
     period: "Sep 2025 — Present",
     location: "Hyderabad, Telangana · On-site",
